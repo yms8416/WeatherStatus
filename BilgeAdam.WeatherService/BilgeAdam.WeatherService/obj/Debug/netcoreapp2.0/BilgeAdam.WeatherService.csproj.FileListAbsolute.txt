@@ -1,0 +1,11 @@
+C:\YMS8416\Weather\WeatherStatus\BilgeAdam.WeatherService\BilgeAdam.WeatherService\bin\Debug\netcoreapp2.0\BilgeAdam.WeatherService.deps.json
+C:\YMS8416\Weather\WeatherStatus\BilgeAdam.WeatherService\BilgeAdam.WeatherService\bin\Debug\netcoreapp2.0\BilgeAdam.WeatherService.runtimeconfig.json
+C:\YMS8416\Weather\WeatherStatus\BilgeAdam.WeatherService\BilgeAdam.WeatherService\bin\Debug\netcoreapp2.0\BilgeAdam.WeatherService.runtimeconfig.dev.json
+C:\YMS8416\Weather\WeatherStatus\BilgeAdam.WeatherService\BilgeAdam.WeatherService\bin\Debug\netcoreapp2.0\BilgeAdam.WeatherService.dll
+C:\YMS8416\Weather\WeatherStatus\BilgeAdam.WeatherService\BilgeAdam.WeatherService\bin\Debug\netcoreapp2.0\BilgeAdam.WeatherService.pdb
+C:\YMS8416\Weather\WeatherStatus\BilgeAdam.WeatherService\BilgeAdam.WeatherService\obj\Debug\netcoreapp2.0\BilgeAdam.WeatherService.csprojAssemblyReference.cache
+C:\YMS8416\Weather\WeatherStatus\BilgeAdam.WeatherService\BilgeAdam.WeatherService\obj\Debug\netcoreapp2.0\BilgeAdam.WeatherService.csproj.CoreCompileInputs.cache
+C:\YMS8416\Weather\WeatherStatus\BilgeAdam.WeatherService\BilgeAdam.WeatherService\obj\Debug\netcoreapp2.0\BilgeAdam.WeatherService.AssemblyInfoInputs.cache
+C:\YMS8416\Weather\WeatherStatus\BilgeAdam.WeatherService\BilgeAdam.WeatherService\obj\Debug\netcoreapp2.0\BilgeAdam.WeatherService.AssemblyInfo.cs
+C:\YMS8416\Weather\WeatherStatus\BilgeAdam.WeatherService\BilgeAdam.WeatherService\obj\Debug\netcoreapp2.0\BilgeAdam.WeatherService.dll
+C:\YMS8416\Weather\WeatherStatus\BilgeAdam.WeatherService\BilgeAdam.WeatherService\obj\Debug\netcoreapp2.0\BilgeAdam.WeatherService.pdb
