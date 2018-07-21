@@ -37,7 +37,9 @@ var yms = {
             result.seaLevel = main.sea_level;
             result.temperature = main.temp;
             result.text = weather.main;
-            callBack(result);
+            if (callBack) {
+                callBack(result);
+            }
         }).fail(function (e, m) {
             Metro.notify.create("Veri okunamadı", "Hata", { cls: "alert" });
         });

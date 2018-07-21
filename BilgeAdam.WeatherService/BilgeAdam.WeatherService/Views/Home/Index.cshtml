@@ -2,34 +2,32 @@
     ViewData["Title"] = "Home Page";
 }
 
-<yms-tile></yms-tile>
 
-<script id="weatherTile" type="text/html">
+
+<script id="weatherTile" type="text/x-template">
     <div data-role="tile" data-size="large" data-effect="hover-zoom-right">
         <div class="slide-front">
             <h2>{{city}}</h2>
             <h5>{{text}}</h5>
+
+            <ul>
+                <li>{{temperature}} &deg;C</li>
+                <li>{{humidity}} g/m<sup>3</sup></li>
+                <li>{{pressure}} mm/Hg</li>
+            </ul>
         </div>
         <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
             <p class="text-center">
-                <ul>
-                    <li>Rüzgar</li>
-                    <li>Nem</li>
-                    <li>Basınç</li>
-                </ul>
-
+                Detay
             </p>
         </div>
         <span class="branding-bar">Detay için tıklayınız</span>
     </div>
 </script>
 
-@section scripts{ 
-    <script>
-        $(document).ready(function () {
-            yms.ajax.get("Ankara", function (r) {
-                console.log(r);
-            });
-        });
-    </script>
-}
+<script id="buttonArea" type="text/x-template">
+    <button v-on:click="count++">You clicked me {{ count }} times.</button>
+</script>
+
+<yms-tile query="Ankara"></yms-tile>
+<button-counter></button-counter>

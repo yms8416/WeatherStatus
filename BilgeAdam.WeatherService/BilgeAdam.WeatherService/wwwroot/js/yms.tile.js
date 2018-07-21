@@ -1,9 +1,24 @@
 ﻿Vue.component('yms-tile', {
-    template: "<p>Can</p>",
+    template: "#weatherTile",
+    props: ['query'],
     data: function () {
         var data = yms.models.weather;
-        data.city = "Kars";
-        data.text = "Cloudy";
+        yms.ajax.get(this.$props.query, function (r) {
+            data = r;
+        });
         return data;
     }
+});
+
+Vue.component('button-counter', {
+    data: function () {
+        return {
+            count: 0
+        }
+    },
+    template: "#buttonArea"
 })
+
+new Vue({
+    el: '#container'
+});
