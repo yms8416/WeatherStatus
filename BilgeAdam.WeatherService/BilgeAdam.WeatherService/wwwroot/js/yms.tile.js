@@ -10,15 +10,6 @@
     }
 });
 
-Vue.component('button-counter', {
-    data: function () {
-        return {
-            count: 0
-        }
-    },
-    template: "#buttonArea"
-})
-
 new Vue({
-    el: '#container'
+    el: '#root'
 });

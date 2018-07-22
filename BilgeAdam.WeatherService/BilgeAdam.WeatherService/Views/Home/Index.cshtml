@@ -2,32 +2,35 @@
     ViewData["Title"] = "Home Page";
 }
 
-
+<div id="root">
+    <yms-tile query="Ankara"></yms-tile>
+</div>
 
 <script id="weatherTile" type="text/x-template">
-    <div data-role="tile" data-size="large" data-effect="hover-zoom-right">
-        <div class="slide-front">
-            <h2>{{city}}</h2>
-            <h5>{{text}}</h5>
-
-            <ul>
-                <li>{{temperature}} &deg;C</li>
-                <li>{{humidity}} g/m<sup>3</sup></li>
-                <li>{{pressure}} mm/Hg</li>
-            </ul>
+    <div>
+        <div class="tiles-grid tiles-group size-4">
+            <div data-role="tile" class="bg-indigo" data-size="wide">
+                <span style="font-size:40px" class="pos-absolute pos-center">{{temperature}} &deg;C</span>
+                <span class="branding-bar">{{city}}</span>
+            </div>
+            <div data-role="tile" class="bg-cyan">
+                <span class="mif-water icon"></span>
+                <span class="badge-bottom">{{humidity}} gr/m<sup>3</sup></span>
+                <span class="branding-bar">Nem</span>
+            </div>
+            <div data-role="tile" class="bg-cyan">
+                <span class="mif-cloud-download icon"></span>
+                <span class="badge-bottom">{{pressure}} mm/Hg</span>
+                <span class="branding-bar">Basınç</span>
+            </div>
+            <div data-role="tile" class="bg-orange" data-size="large" data-cover="/images/sunny1.jfif">
+                <span class="branding-bar">{{text}}</span>
+            </div>
+            <div data-role="tile" class="bg-cyan">
+                <span class="mif-move-up icon"></span>
+                <span class="badge-bottom">{{seaLevel}} m</span>
+                <span class="branding-bar">Rakım</span>
+            </div>
         </div>
-        <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
-            <p class="text-center">
-                Detay
-            </p>
-        </div>
-        <span class="branding-bar">Detay için tıklayınız</span>
     </div>
 </script>
-
-<script id="buttonArea" type="text/x-template">
-    <button v-on:click="count++">You clicked me {{ count }} times.</button>
-</script>
-
-<yms-tile query="Ankara"></yms-tile>
-<button-counter></button-counter>
