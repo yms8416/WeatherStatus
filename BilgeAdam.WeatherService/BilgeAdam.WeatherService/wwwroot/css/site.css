@@ -2,9 +2,15 @@
     margin-top: 7px;
     margin-left: 25px;
 }
+
 .app-bar-menu li a {
-    color:#FFF!important;
+    color: #FFF !important;
 }
+
 .container {
     margin: 80px 0px 0px 0px;
+}
+
+body {
+    background-image: url("/images/bg.jpg");
 }
